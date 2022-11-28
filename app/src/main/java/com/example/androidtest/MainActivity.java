@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnTextView;
     private Button btnButton;
     private Button btnEditText;
+    private Button btnRadioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +22,13 @@ public class MainActivity extends AppCompatActivity {
         btnTextView = findViewById(R.id.btn_textView);
         btnButton = findViewById(R.id.btn_button);
         btnEditText = findViewById(R.id.btn_editText);
+        btnRadioButton = findViewById(R.id.btn_radioButton);
 
         OnClick onClick = new OnClick();
         btnTextView.setOnClickListener(onClick);
         btnButton.setOnClickListener(onClick);
         btnEditText.setOnClickListener(onClick);
+        btnRadioButton.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -42,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_editText:
                     intent = new Intent(MainActivity.this, EditTextActivity.class);
+                    break;
+                case R.id.btn_radioButton:
+                    intent = new Intent(MainActivity.this, RadioButtonActivity.class);
+                    break;
+                default:
                     break;
             }
             startActivity(intent);

@@ -35,5 +35,14 @@
         android:textSize="20sp"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/btn_radioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="RadioButtonDemo"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+
 
 </LinearLayout>
