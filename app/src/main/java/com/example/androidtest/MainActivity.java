@@ -10,43 +10,41 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnTextView1;
-    private Button btnTextView2;
-    private Button btnTextView3;
+    private Button btnTextView;
+    private Button btnButton;
+    private Button btnEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnTextView1 = findViewById(R.id.btn_1);
-        btnTextView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // 跳转到TextView界面
-                Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
-                startActivity(intent);
-            }
-        });
-        btnTextView2 = findViewById(R.id.btn_2);
-        btnTextView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // 跳转到EditView界面
-                Intent intent = new Intent(MainActivity.this, EditTextActivity.class);
-                startActivity(intent);
-            }
-        });
-        // 通常使用此方式
-        btnTextView3 = findViewById(R.id.btn_3);
-        btnTextView3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "btn3被点击了", Toast.LENGTH_SHORT).show();
-            }
-        });
+        btnTextView = findViewById(R.id.btn_textView);
+        btnButton = findViewById(R.id.btn_button);
+        btnEditText = findViewById(R.id.btn_editText);
+
+        OnClick onClick = new OnClick();
+        btnTextView.setOnClickListener(onClick);
+        btnButton.setOnClickListener(onClick);
+        btnEditText.setOnClickListener(onClick);
     }
 
-    public void showToast(View view) {
-        Toast.makeText(this, "btn4被点击了", Toast.LENGTH_SHORT).show();
+    private class OnClick implements View.OnClickListener {
+
+        @Override
+        public void onClick(View view) {
+            Intent intent = null;
+            switch (view.getId()) {
+                case R.id.btn_textView:
+                    intent = new Intent(MainActivity.this, TextViewActivity.class);
+                    break;
+                case R.id.btn_button:
+                    intent = new Intent(MainActivity.this, ButtonActivity.class);
+                    break;
+                case R.id.btn_editText:
+                    intent = new Intent(MainActivity.this, EditTextActivity.class);
+                    break;
+            }
+            startActivity(intent);
+        }
     }
 }
