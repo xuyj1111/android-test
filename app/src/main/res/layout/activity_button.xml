@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_background1"
+        android:background="@drawable/bg_btn1"
         android:text="背景样式1"
         android:textSize="20sp"
         tools:ignore="MissingConstraints" />
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_background2"
+        android:background="@drawable/bg_btn2"
         android:text="背景样式2"
         android:textSize="20sp"
         tools:ignore="MissingConstraints" />
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/btn_background3"
+        android:background="@drawable/bg_btn3"
         android:text="背景样式3"
         android:textSize="20sp"
         tools:ignore="MissingConstraints" />
