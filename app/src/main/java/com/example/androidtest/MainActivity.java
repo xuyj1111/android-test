@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.androidtest.gridview.GridViewActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button btnTextView;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnRadioButton;
     private Button btnCheckBox;
     private Button btnImageView;
+    private Button btnGridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         btnRadioButton = findViewById(R.id.btn_radioButton);
         btnCheckBox = findViewById(R.id.btn_checkBox);
         btnImageView = findViewById(R.id.btn_imageView);
+        btnGridView = findViewById(R.id.btn_gridView);
 
         OnClick onClick = new OnClick();
         btnTextView.setOnClickListener(onClick);
@@ -35,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btnRadioButton.setOnClickListener(onClick);
         btnCheckBox.setOnClickListener(onClick);
         btnImageView.setOnClickListener(onClick);
+        btnGridView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -60,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_imageView:
                     intent = new Intent(MainActivity.this, ImageViewActivity.class);
+                    break;
+                case R.id.btn_gridView:
+                    intent = new Intent(MainActivity.this, GridViewActivity.class);
                     break;
                 default:
                     break;
