@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidtest">
-
-<!--    网络权限授权-->
+    <!-- 网络权限授权 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTest">
-        <activity android:name=".ImageViewActivity"></activity>
+        <activity android:name=".recyclerview.LinearRecyclerViewActivity"></activity>
+        <activity android:name=".recyclerview.RecyclerActivity" />
+        <activity android:name=".ImageViewActivity" />
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".RadioButtonActivity" />
         <activity android:name=".ButtonActivity" />

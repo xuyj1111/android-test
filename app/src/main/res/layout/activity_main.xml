@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,67 +8,114 @@
     android:padding="10dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_textView"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="TextViewDemo"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints" />
+        android:orientation="vertical"
+        android:padding="10dp">
 
-    <Button
-        android:id="@+id/btn_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="ButtonDemo"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btn_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="TextViewDemo"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="EditTextDemo"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btn_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="ButtonDemo"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_radioButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="RadioButtonDemo"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btn_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="EditTextDemo"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_checkBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="CheckBoxDemo"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btn_radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="RadioButtonDemo"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="ImageViewDemo"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btn_checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="CheckBoxDemo"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_gridView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:text="GridViewDemo"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/btn_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="ImageViewDemo"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="GridViewDemo"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="左右滚动" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="左右滚动" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="左右滚动" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="左右滚动" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btn_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="RecyclerViewDemo"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</ScrollView>
