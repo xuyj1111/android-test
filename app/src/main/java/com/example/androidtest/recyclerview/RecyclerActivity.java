@@ -11,7 +11,7 @@ import com.example.androidtest.R;
 
 public class RecyclerActivity extends AppCompatActivity {
 
-    private Button linearBtn;
+    private Button linearBtn, horBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,14 @@ public class RecyclerActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(RecyclerActivity.this, LinearRecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        horBtn = findViewById(R.id.btn_hor);
+        horBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RecyclerActivity.this, HorRecyclerViewActivity.class);
                 startActivity(intent);
             }
         });

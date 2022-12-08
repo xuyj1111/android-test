@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".recyclerview.RecyclerActivity">
 
     <Button
@@ -12,6 +13,15 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="列表视图"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btn_hor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="水平滚动"
         android:textSize="20sp"
         />
 </LinearLayout>
