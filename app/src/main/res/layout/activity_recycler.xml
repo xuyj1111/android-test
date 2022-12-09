@@ -33,4 +33,13 @@
         android:text="网格视图"
         android:textSize="20sp"
         />
+
+    <Button
+        android:id="@+id/btn_pu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="瀑布流"
+        android:textSize="20sp"
+        />
 </LinearLayout>
