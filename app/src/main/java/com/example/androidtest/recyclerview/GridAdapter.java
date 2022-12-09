@@ -11,24 +11,24 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidtest.R;
 
-public class HorAdapter extends RecyclerView.Adapter<HorAdapter.LinearViewHolder> {
+public class GridAdapter extends RecyclerView.Adapter<GridAdapter.LinearViewHolder> {
 
     private Context context;
     private OnItemClickListener listener;
 
-    public HorAdapter(Context context, OnItemClickListener listener) {
+    public GridAdapter(Context context, OnItemClickListener listener) {
         this.context = context;
         this.listener = listener;
     }
 
     @NonNull
     @Override
-    public HorAdapter.LinearViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return new LinearViewHolder(LayoutInflater.from(context).inflate(R.layout.layout_hor_recyclerview_item, viewGroup, false));
+    public GridAdapter.LinearViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        return new LinearViewHolder(LayoutInflater.from(context).inflate(R.layout.layout_grid_recyclerview_item, viewGroup, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HorAdapter.LinearViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull GridAdapter.LinearViewHolder viewHolder, int i) {
         viewHolder.textView.setText("Hello World");
         viewHolder.itemView.setOnClickListener(v -> listener.onclick(i));
     }

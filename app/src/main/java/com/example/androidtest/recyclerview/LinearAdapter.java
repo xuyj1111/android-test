@@ -21,7 +21,7 @@ public class LinearAdapter extends RecyclerView.Adapter<LinearAdapter.LinearView
     @NonNull
     @Override
     public LinearAdapter.LinearViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return new LinearViewHolder(LayoutInflater.from(context).inflate(R.layout.layout_linear_item, viewGroup, false));
+        return new LinearViewHolder(LayoutInflater.from(context).inflate(R.layout.layout_linear_recyclerview_item, viewGroup, false));
     }
 
     @Override
