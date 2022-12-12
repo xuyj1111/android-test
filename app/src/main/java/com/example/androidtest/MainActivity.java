@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.androidtest.gridview.GridViewActivity;
 import com.example.androidtest.recyclerview.RecyclerActivity;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnImageView;
     private Button btnGridView;
     private Button btnRecyclerView;
+    private Button btnToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnImageView = findViewById(R.id.btn_imageView);
         btnGridView = findViewById(R.id.btn_gridView);
         btnRecyclerView = findViewById(R.id.btn_recyclerview);
+        btnToast = findViewById(R.id.btn_toast);
 
         OnClick onClick = new OnClick();
         btnTextView.setOnClickListener(onClick);
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnImageView.setOnClickListener(onClick);
         btnGridView.setOnClickListener(onClick);
         btnRecyclerView.setOnClickListener(onClick);
+        btnToast.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -74,6 +78,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_recyclerview:
                     intent = new Intent(MainActivity.this, RecyclerActivity.class);
+                    break;
+                case R.id.btn_toast:
+                    intent = new Intent(MainActivity.this, ToastActivity.class);
                     break;
                 default:
                     break;
