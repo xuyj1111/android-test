@@ -21,6 +21,7 @@
             android:layout_marginBottom="10dp"
             android:text="TextViewDemo"
             android:textSize="20sp"
+            android:textAllCaps="false"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -30,6 +31,7 @@
             android:layout_marginBottom="10dp"
             android:text="ButtonDemo"
             android:textSize="20sp"
+            android:textAllCaps="false"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -39,6 +41,7 @@
             android:layout_marginBottom="10dp"
             android:text="EditTextDemo"
             android:textSize="20sp"
+            android:textAllCaps="false"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -48,6 +51,7 @@
             android:layout_marginBottom="10dp"
             android:text="RadioButtonDemo"
             android:textSize="20sp"
+            android:textAllCaps="false"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -57,6 +61,7 @@
             android:layout_marginBottom="10dp"
             android:text="CheckBoxDemo"
             android:textSize="20sp"
+            android:textAllCaps="false"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -66,6 +71,7 @@
             android:layout_marginBottom="10dp"
             android:text="ImageViewDemo"
             android:textSize="20sp"
+            android:textAllCaps="false"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -75,6 +81,7 @@
             android:layout_marginBottom="10dp"
             android:text="GridViewDemo"
             android:textSize="20sp"
+            android:textAllCaps="false"
             tools:ignore="MissingConstraints" />
 
         <HorizontalScrollView
@@ -116,6 +123,7 @@
             android:layout_marginBottom="10dp"
             android:text="RecyclerViewDemo"
             android:textSize="20sp"
+            android:textAllCaps="false"
             tools:ignore="MissingConstraints" />
 
         <Button
@@ -125,6 +133,17 @@
             android:layout_marginBottom="10dp"
             android:text="ToastDemo"
             android:textSize="20sp"
+            android:textAllCaps="false"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="DialogDemo"
+            android:textSize="20sp"
+            android:textAllCaps="false"
             tools:ignore="MissingConstraints" />
     </LinearLayout>
 </ScrollView>

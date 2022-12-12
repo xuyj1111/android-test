@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnGridView;
     private Button btnRecyclerView;
     private Button btnToast;
+    private Button btnDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btnGridView = findViewById(R.id.btn_gridView);
         btnRecyclerView = findViewById(R.id.btn_recyclerview);
         btnToast = findViewById(R.id.btn_toast);
+        btnDialog = findViewById(R.id.btn_dialog);
 
         OnClick onClick = new OnClick();
         btnTextView.setOnClickListener(onClick);
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         btnGridView.setOnClickListener(onClick);
         btnRecyclerView.setOnClickListener(onClick);
         btnToast.setOnClickListener(onClick);
+        btnDialog.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -81,6 +84,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_toast:
                     intent = new Intent(MainActivity.this, ToastActivity.class);
+                    break;
+                case R.id.btn_dialog:
+                    intent = new Intent(MainActivity.this, DialogActivity.class);
                     break;
                 default:
                     break;
